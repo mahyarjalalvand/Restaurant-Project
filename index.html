@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+
+<head >
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Zero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="bg-primary pt-4 pb-16">
+      <header class="maxWidth flex items-center justify-between">
+        <div class="flex items-center gap-3 sm:gap-7 flex-row-reverse sm:flex-row ">
+          <img src="./public/image/Logo.png" alt="" class="w-36">
+          <div
+            class="hambergur-menu cursor-pointer flex flex-col [&>span]:w-6 [&>span]:h-[2px] [&>span]:bg-white gap-1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="text-white flex items-center gap-5">
+          <a href="tel:+86 852 346 000" class="hidden sm:block">+86 852 346 000</a>
+          <a href="#Reservations" class="border py-2 px-5 text-lg font-medium scroll-smooth">Reservations</a>
+         
+        </div>
+      </header>
+      <div
+        class="menu invisible h-0 w-0 absolute transition-all duration-100 z-50 top-0 left-0 [&.show]:size-full [&.show]:visible">
+        <div
+          class="menuContainer size-full relative bg-bg-2 bg-cover bg-center before:content-[''] before:absolute before:size-full before:top-0 before:left-0 before:z-10 before:bg-[#233000be] *:relative *:z-20">
+          <div id="closeBtn"
+            class="text-xl m-10 cursor-pointer inline-block hover:-rotate-[40deg] hover:bg-[#c7c7c757] p-2 rounded-full hover:invert transition duration-100 ">
+            <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.5009 15.3906L31.5086 1.4815L30.0894 0.0722961L16.0817 13.9814L2.07399 0.072342L0.654785 1.48155L14.6625 15.3906L1.02282 28.9342L2.44202 30.3434L16.0817 16.7998L29.7214 30.3435L31.1406 28.9342L17.5009 15.3906Z"
+                fill="black" />
+            </svg>
+          </div>
+          <div class="maxWidth flex gap-12 sm:gap-0 flex-wrap justify-between items-end">
+            <div class="w-full sm:w-6/12">
+              <ul
+                class="flex gap-8 flex-col [&_li_a]:text-white [&_li_a]:text-5xl [&>li>ul>li>a]:text-lg [&>li>ul]:ml-4">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li>
+                  <a href="#">BLOGS</a>
+                  <ul class="">
+                    <li><a href="#">1 Column</a></li>
+                    <li><a href="#">2 Column</a></li>
+                    <li><a href="#">Sidebar Post</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="flex gap-7 flex-col w-full sm:w-3/12">
+              <span class="border-b border-dashed text-white text-2xl font-semibold pb-5">Contact</span>
+              <ul class="[&_li]:text-white">
+                <li><a href="#">+86 852 346 000</a></li>
+                <li><a href="#">info@foodzero.com</a></li>
+                <li class="mt-5">
+                  1959 Sepulveda Blvd. <br>
+                  Culver City, CA, 90230
+                </li>
+              </ul>
+              <div class="flex gap-7 [&_a]:transition-all [&_a]:duration-100 ">
+                <a href="" class="hover:-translate-y-2">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.23327 0C3.71382 0 0 3.70873 0 8.23327V19.7667C0 24.2862 3.70873 28 8.23327 28H19.7667C24.2862 28 28 24.2913 28 19.7667V8.23455C28 3.71382 24.2913 0 19.7667 0H8.23327ZM8.23327 2.54545H19.7667C20.5139 2.54445 21.254 2.69088 21.9445 2.97637C22.6351 3.26185 23.2625 3.68077 23.7909 4.20914C24.3192 4.7375 24.7381 5.36492 25.0236 6.05545C25.3091 6.74598 25.4555 7.48606 25.4545 8.23327V19.7667C25.4555 20.5139 25.3091 21.254 25.0236 21.9445C24.7381 22.6351 24.3192 23.2625 23.7909 23.7909C23.2625 24.3192 22.6351 24.7381 21.9445 25.0236C21.254 25.3091 20.5139 25.4555 19.7667 25.4545H8.23455C7.48722 25.4557 6.74701 25.3094 6.05633 25.024C5.36565 24.7386 4.73808 24.3197 4.20959 23.7913C3.68109 23.2629 3.26205 22.6355 2.97649 21.9448C2.69092 21.2542 2.54445 20.5141 2.54545 19.7667C2.54545 19.7667 2.54663 8.98187 2.54545 8.23455C2.54428 7.48722 2.69059 6.74701 2.976 6.05633C3.26141 5.36565 3.6803 4.73808 4.20868 4.20959C4.73706 3.68109 5.36454 3.26205 6.05515 2.97649C6.74577 2.69092 7.48595 2.54445 8.23327 2.54545ZM21.5167 5.33018C21.3651 5.32951 21.2149 5.35887 21.0747 5.41658C20.9345 5.47429 20.8071 5.5592 20.6999 5.66641C20.5927 5.77362 20.5077 5.901 20.45 6.04121C20.3923 6.18141 20.363 6.33166 20.3636 6.48327C20.3636 7.12473 20.8753 7.63636 21.5167 7.63636C21.6684 7.63721 21.8188 7.60796 21.9592 7.55033C22.0995 7.4927 22.2271 7.40781 22.3344 7.30059C22.4418 7.19336 22.5268 7.06592 22.5846 6.92563C22.6424 6.78535 22.6718 6.63499 22.6711 6.48327C22.6718 6.33155 22.6424 6.1812 22.5846 6.04091C22.5268 5.90062 22.4418 5.77318 22.3344 5.66596C22.2271 5.55873 22.0995 5.47385 21.9592 5.41621C21.8188 5.35858 21.6684 5.32934 21.5167 5.33018ZM14 6.36364C9.8 6.36364 6.36364 9.8 6.36364 14C6.36364 18.2 9.8 21.6364 14 21.6364C18.2 21.6364 21.6364 18.2 21.6364 14C21.6364 9.8 18.2 6.36364 14 6.36364ZM14 8.90909C16.8293 8.90909 19.0909 11.1707 19.0909 14C19.0909 16.8293 16.8293 19.0909 14 19.0909C11.1707 19.0909 8.90909 16.8293 8.90909 14C8.90909 11.1707 11.1707 8.90909 14 8.90909Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a href="" class="hover:-translate-y-2">
+                  <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M28 2.60975C26.9516 3.05836 25.8394 3.3522 24.7007 3.48144C25.8995 2.78756 26.7967 1.69633 27.2253 0.410799C26.0978 1.05666 24.865 1.51271 23.5795 1.75949C22.792 0.94571 21.7693 0.379785 20.6446 0.135299C19.5198 -0.109186 18.345 -0.0209199 17.2728 0.38862C16.2007 0.798161 15.2808 1.51003 14.6328 2.43166C13.9848 3.35329 13.6387 4.44204 13.6395 5.55635C13.6395 5.99275 13.6897 6.41563 13.7912 6.82046C11.5063 6.71176 9.2707 6.13891 7.23017 5.13924C5.18963 4.13958 3.38993 2.73553 1.94833 1.01861C1.43614 1.86606 1.16749 2.83039 1.17017 3.81184C1.17017 5.73677 2.18167 7.4373 3.72633 8.43303C2.81395 8.40504 1.9218 8.16607 1.12467 7.73613V7.80717C1.12388 9.08953 1.5825 10.3326 2.4226 11.3251C3.26269 12.3176 4.43242 12.9983 5.733 13.2516C4.88724 13.4757 3.99948 13.5089 3.13833 13.3485C3.50514 14.4517 4.2193 15.4166 5.18103 16.1085C6.14277 16.8003 7.30405 17.1845 8.50267 17.2074C7.31108 18.1114 5.94675 18.7794 4.48776 19.1732C3.02876 19.567 1.50375 19.6788 0 19.5022C2.62561 21.1354 5.68253 22.0026 8.80483 22C19.3725 22 25.1522 13.538 25.1522 6.19912C25.1522 5.96231 25.1428 5.71873 25.1335 5.48079C26.2565 4.69487 27.2269 3.72329 28 2.61088V2.60975Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a href="" class="hover:-translate-y-2">
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.36364 0C1.07073 0 0 1.07073 0 2.36364V23.6364C0 24.9293 1.07073 26 2.36364 26H23.6364C24.9293 26 26 24.9293 26 23.6364V2.36364C26 1.07073 24.9293 0 23.6364 0H2.36364ZM2.36364 2.36364H23.6364V23.6364H17.5051V15.6591H20.5707L21.0139 12.1136H17.5063V9.82327C17.5063 8.79036 17.7592 8.08836 19.2412 8.08836H21.1616V4.875C20.8343 4.83364 19.6985 4.76391 18.3926 4.76391C15.6685 4.76391 13.8131 6.40309 13.8131 9.45455V12.1136H10.7108V15.6591H13.8119V23.6364H2.36364V2.36364Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a href="" class="hover:-translate-y-2">
+                  <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14 0C9.94431 0 6.36031 0.429 4.17308 0.7568C2.36385 1.0274 0.904615 2.4189 0.571846 4.2625C0.290769 5.8311 0 8.1257 0 11C0 13.8743 0.290769 16.17 0.571846 17.7375C0.904615 19.5811 2.36385 20.977 4.17308 21.2443C6.37 21.5699 9.96585 22 14 22C18.0342 22 21.6311 21.571 23.8269 21.2432C25.6362 20.977 27.0954 19.5811 27.4282 17.7375C27.7092 16.1645 28 13.8655 28 11C28 8.1345 27.7135 5.8355 27.4282 4.2625C27.0954 2.4189 25.6362 1.0274 23.8269 0.7557C21.6397 0.4301 18.0546 0 14 0ZM14 2.2C17.9125 2.2 21.4082 2.6081 23.5243 2.9216C23.9641 2.98581 24.3729 3.18968 24.693 3.50436C25.0131 3.81904 25.2281 4.22858 25.3077 4.675C25.5683 6.127 25.8462 8.2797 25.8462 11C25.8462 13.7159 25.5683 15.873 25.3077 17.325C25.2295 17.772 25.0149 18.1824 24.6946 18.4973C24.3743 18.8122 23.9646 19.0156 23.5243 19.0784C21.3985 19.3919 17.8866 19.8 14 19.8C10.1123 19.8 6.59615 19.3919 4.47569 19.0784C4.03567 19.0148 3.62648 18.8112 3.30631 18.4964C2.98613 18.1816 2.77128 17.7717 2.69231 17.325C2.43169 15.873 2.15385 13.7247 2.15385 11C2.15385 8.272 2.43169 6.127 2.69231 4.675C2.77128 4.2283 2.98613 3.81841 3.30631 3.50362C3.62648 3.18883 4.03567 2.98517 4.47569 2.9216C6.58754 2.6081 10.0875 2.2 14 2.2ZM10.7692 4.7091V17.292L12.3846 16.3636L19.9231 11.9636L21.5385 11L19.9231 10.0375L12.3846 5.6375L10.7692 4.7091ZM12.9231 8.4909L17.1974 11L12.9231 13.5091V8.4909Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--*----END HEADER--------->
+      <!--*----FIRS SECTION--------->
+      <section class="mt-20 ">
+        <div class="maxWidth flex flex-wrap gap-4">
+          <div class="w-full md:w-[57%] relative flex flex-col gap-8  m-auto lg:m-0 order-2 md:order-1">
+            <h1 class="text-white text-5xl md:text-7xl lg:text-8xl max-w-full md:max-w-2xl leading-tight">
+              Healthy Eating
+              is important
+              part of lifestyle
+            </h1>
+            <p class="text-white ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu
+            </p>
+            <span class="hidden lg:block absolute top-[36rem] -left-40 rotate-90 text-white text-3xl mb-10">
+              Scroll ------------------------
+            </span>
+          </div>
+          <div class="w-full md:w-[40%]  lg:right-20 top-0 md:top-20 order-1 md:order-2  relative ">
+            <img src="./public/image/Image.png" alt="" class=" w-10/12 lg:w-full m-auto lg:m-0 z-10 ">
+            <img src="./public/image/Images.png" alt=""
+              class=" w-[450px] m-auto lg:m-0 bottom-0 right-0 lg:right-20 xl:right-28 z-20 absolute">
+          </div>
+
+        </div>
+
+      </section>
+      <!--*----END FIRS SECTION--------->
+      <section class="bg-primary py-64">
+        <div class="maxWidth flex gap-16 md:gap-0 justify-center md:justify-between flex-wrap">
+          <div class="flex gap-8 flex-col items-center md:items-start w-full md:w-6/12 text-white">
+            <img src="./public/image/food1.png" alt="" class="w-10/12">
+            <p class="w-3/4 md:w-2/3 text-5xl font-semibold">Start to plan your diet today</p>
+            <span class="w-3/4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu</span>
+          </div>
+          <div class="w-full md:w-5/12 flex flex-col items-center md:items-end gap-10 ">
+            <p class="text-white text-xl w-9/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue
+              arcu</p>
+            <img src="./public/image/2.png" alt="" class="w-9/12 ">
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <section class="">
+      <div class="bg-flower-bg bg-no-repeat bg-right-top max-w-7xl m-auto">
+        <div class="maxWidth py-20 flex flex-col gap-32">
+          <div class="flex flex-col gap-5">
+            <h2 class="text-7xl font-bold">Our Menu</h2>
+            <p class="text-textColor w-10/12 md:w-4/12">This is a section of your menu. Give your section a brief
+              description</p>
+          </div>
+
+          <div class="flex flex-wrap  justify-between gap-10">
+            <div class="w-full md:w-5/12 flex flex-col gap-5">
+              <div
+                class="flex justify-end border-2 border-black border-b-dotted border-dotted border-t-0 border-r-0 border-l-0">
+                <p class="text-2xl font-bold"><span class="text-4xl font-medium">$</span>20</p>
+              </div>
+              <div class="flex flex-col gap-4">
+                <p class="text-5xl">Deep Sea Snow White Cod Fillet</p>
+                <span class="text-textColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 flex flex-col gap-5">
+              <div
+                class="flex justify-end border-2 border-black border-b-dotted border-dotted border-t-0 border-r-0 border-l-0">
+                <p class="text-2xl font-bold"><span class="text-4xl font-medium">$</span>20</p>
+              </div>
+              <div class="flex flex-col gap-4">
+                <p class="text-5xl">Deep Sea Snow White Cod Fillet</p>
+                <span class="text-textColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 flex flex-col gap-5">
+              <div
+                class="flex justify-end border-2 border-black border-b-dotted border-dotted border-t-0 border-r-0 border-l-0">
+                <p class="text-2xl font-bold"><span class="text-4xl font-medium">$</span>20</p>
+              </div>
+              <div class="flex flex-col gap-4">
+                <p class="text-5xl">Deep Sea Snow White Cod Fillet</p>
+                <span class="text-textColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 flex flex-col gap-5">
+              <div
+                class="flex justify-end border-2 border-black border-b-dotted border-dotted border-t-0 border-r-0 border-l-0">
+                <p class="text-2xl font-bold"><span class="text-4xl font-medium">$</span>20</p>
+              </div>
+              <div class="flex flex-col gap-4">
+                <p class="text-5xl">Deep Sea Snow White Cod Fillet</p>
+                <span class="text-textColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-secondary2 pt-20">
+      <div class="maxWidth flex flex-wrap gap-6">
+        <div class="w-full md:w-6/12 bg-leaf bg-no-repeat bg-left-bottom rotate-90 bg-[length:200px_200px]">
+          <img src="./public/image/men.png" alt="" class="-rotate-90 w-full">
+        </div>
+        <div class="w-full md:w-5/12 flex flex-col gap-7 bg-leaf bg-no-repeat bg-right-bottom  bg-[length:300px_300px]">
+          <h3 class="text-6xl md:text-7xl lg:text-8xl">Excellent cook</h3>
+          <p class="text-textColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus
+            imperdiet. Turpis egestas
+            ultricies purus auctor tincidunt lacus nunc.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-36">
+      <div class="maxWidth">
+        <div class="flex flex-wrap gap-8 md:gap-0 [&_p]:text-center [&_p]:font-sans">
+          <div class="flex gap-3 flex-col items-center w-full md:w-4/12">
+            <div class="bg-secondary2 rounded-full p-8">
+              <svg width="80" height="80" viewBox="0 0 150 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M43.375 0.625L46.6122 8.53125C48.6305 13.4475 51.3732 25.7353 50.7407 31.5312C42.9035 36.3612 38.0965 41.0762 34.3878 45.0093C29.8568 41.3465 20.8925 35.125 6 35.125H0.25V40.875C0.25 51.8805 4.22325 60.8218 5.6435 63.875C4.206 66.9053 0.25 75.5303 0.25 86.875V92.625H6C20.7775 92.625 29.851 86.3805 34.3935 82.7408C41.1957 89.75 50.896 97.1387 63.1435 102.688C62.603 106.258 62.1775 111.243 63.6782 117.062L64.7592 121.375H69.25C76.3455 121.375 82.4577 117.85 87.397 114.728C91.4392 112.163 93.3942 110.369 94.4062 109.513C117.274 108.708 131.873 96.374 139.688 84.1783C147.772 71.58 149.75 59.022 149.75 59.022L149.928 57.5845L149.393 56.147C149.393 56.147 136.226 19.9853 100.519 18.2315C96.7235 13.6315 91.4163 9.8135 83.9873 6.7315C75.2012 3.0975 64.1497 0.625 52 0.625H43.375ZM60.0845 12.8438C67.341 13.6488 74.126 15.115 79.4908 17.3345C86.8392 20.3705 91.9567 24.7233 93.147 26.6783L94.7685 29.375H98C126.727 29.375 137.06 56.5725 137.893 58.8438C137.491 60.954 135.824 68.9753 129.987 78.0717C123.312 88.4678 112.507 98.375 92.25 98.375H90.0938L88.478 99.8125C88.478 99.8125 85.442 102.4 81.2905 105.022C79.1055 106.396 77.2483 106.644 75 107.54C75.23 104.913 75 101.072 75 101.072L76.2592 96.0405L71.5845 94.419C57.3475 88.9853 45.238 78.7445 39.0625 71.603L35.1065 66.9283L30.794 71.2408C30.794 71.2408 23.135 76.6113 13.1875 79.147C14.671 72.408 16.9595 66.3935 16.9595 66.3935L18.2188 63.875L16.9595 61.3565C16.9595 61.3565 14.4697 54.7555 13.0092 47.7003C23.6065 50.0405 30.794 56.5093 30.794 56.5093L35.1065 60.8218L39.0625 56.147C44.2088 50.3338 58.0662 35.8438 78.4155 33.147L76.794 21.8253C71.2913 22.5498 66.49 24.1425 61.8843 25.9652C61.591 21.1352 61.3438 16.978 60.0845 12.8438ZM112.375 52.375C110.088 52.375 107.894 53.2837 106.276 54.9012C104.659 56.5187 103.75 58.7125 103.75 61C103.75 63.2875 104.659 65.4813 106.276 67.0988C107.894 68.7163 110.088 69.625 112.375 69.625C114.662 69.625 116.856 68.7163 118.474 67.0988C120.091 65.4813 121 63.2875 121 61C121 58.7125 120.091 56.5187 118.474 54.9012C116.856 53.2837 114.662 52.375 112.375 52.375Z"
+                  fill="black" />
+              </svg>
+
+            </div>
+            <span class="text-3xl font-semibold ">Premium Quality</span>
+            <p class="w-10/12 text-center text-textColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Neque congue arcu</p>
+          </div>
+          <div class="flex gap-3 flex-col items-center w-full md:w-4/12">
+            <div class="bg-secondary2 rounded-full p-8">
+              <svg width="80" height="80" viewBox="0 0 145 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M103.531 0.146973L97.0626 9.66897C97.0626 9.66897 100.587 12.4117 102.272 16.3217C103.733 19.7545 104.791 23.7795 99.2189 30.5127L94.1876 35.5497C77.2539 21.1287 60.0441 20.4502 60.0441 20.4502H56.8126L55.0129 23.3252C55.0129 23.3252 40.3504 48.2572 26.2629 74C19.2191 86.8685 12.2501 99.967 7.40861 110.3C4.97636 115.463 3.06736 119.96 1.83111 123.594C1.22736 125.411 0.796107 126.94 0.577607 128.625C0.347607 130.31 -0.279141 132.621 2.54986 135.456C5.38461 138.285 7.69611 137.652 9.38086 137.428C11.0656 137.204 12.5951 136.778 14.4121 136.175C18.0519 134.938 22.5426 133.029 27.7119 130.597C38.0274 125.75 51.1259 118.792 64.0001 111.743C89.7199 97.6325 114.675 82.993 114.675 82.993L117.55 81.1932V77.7777C117.55 77.7777 116.785 60.775 102.456 43.8182L104.428 41.662C104.923 41.1675 105.371 40.8282 105.866 40.4027L107.303 39.1435C114.088 33.934 120.511 34.141 126.175 35.5555C130.104 36.5482 133.818 38.2514 137.134 40.581L144.322 31.5995C144.322 31.5995 137.939 26.6832 128.866 24.412C126.859 23.9403 124.817 23.6402 122.759 23.515L134.438 11.831L126.169 3.56822L114.134 15.6087C113.844 14.2524 113.422 12.9275 112.875 11.6527C109.638 4.10872 103.531 0.152724 103.531 0.152724V0.146973ZM62.9191 32.669C66.6969 33.0312 77.5011 34.601 90.4156 47.5845C103.353 60.614 104.946 71.332 105.325 75.0752C104.382 75.6387 99.4661 78.6057 95.6251 80.8252C93.5883 76.3077 91.0562 72.0304 88.0754 68.0717L78.9156 75.081C82.9579 80.4687 84.6196 84.1775 85.5626 86.581C76.5573 91.6827 67.5122 96.7141 58.4284 101.675C57.8706 101.962 57.3761 102.278 56.8126 102.572C55.7546 99.4265 54.0296 95.6315 50.8844 91.25L41.5406 97.897C44.3696 101.853 45.7611 105.107 46.3936 107.241C46.5029 107.603 46.5029 107.689 46.5661 107.959C37.9699 112.565 29.6611 116.987 22.8531 120.178C19.3054 121.846 16.7869 122.766 14.2281 123.772C15.2401 121.213 16.1601 118.695 17.8219 115.147C22.4679 105.245 29.3449 92.331 36.3254 79.5717C39.6949 73.4192 42.2594 68.8135 45.3126 63.397C47.1526 65.0127 49.5331 67.192 52.1436 70.5845L61.1251 63.5752C58.2088 59.7045 54.8295 56.2055 51.0626 53.1562C57.0829 42.5992 61.8899 34.4457 62.9249 32.669H62.9191Z"
+                  fill="black" />
+              </svg>
+
+            </div>
+            <span class="text-3xl font-semibold">Seasonal Vegetables</span>
+            <p class="w-10/12 text-center text-textColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Neque congue arcu</p>
+          </div>
+          <div class="flex gap-3 flex-col items-center w-full md:w-4/12">
+            <div class="bg-secondary2 rounded-full p-8">
+              <svg width="80" height="80" viewBox="0 0 139 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M52 0C37.1535 0 23.9458 8.2685 14.8033 20.8438C5.66075 33.4247 0.25 50.3988 0.25 69C0.25 87.5955 5.66075 104.581 14.8033 117.156C23.9458 129.737 37.1535 138 52 138C99.3225 138 124.548 110.935 130.706 82.478C135.03 79.35 138.25 74.727 138.25 69C138.25 63.273 135.036 58.65 130.7 55.522C124.22 26.3465 94.0498 0 52 0ZM52 11.5C62.557 11.5 72.355 17.342 79.853 27.6747C87.351 37.996 92.25 52.67 92.25 69C92.25 85.33 87.351 99.9925 79.853 110.331C72.3492 120.652 62.557 126.5 52 126.5C41.443 126.5 31.645 120.658 24.147 110.325C16.649 100.004 11.75 85.33 11.75 69C11.75 52.67 16.649 38.0075 24.147 27.669C31.6508 17.342 41.443 11.5 52 11.5ZM88.6562 20.3033C106.136 29.5608 117.36 44.7868 120.103 59.6562L120.638 62.5312L123.34 63.7905C125.335 64.7105 126.75 66.6425 126.75 69C126.75 71.3575 125.336 73.2895 123.335 74.2095L120.643 75.4688L120.103 78.3438C117.044 94.99 107.005 111.314 86.8565 120.031C87.6443 119.088 88.455 118.168 89.1967 117.156C98.3392 104.575 103.75 87.6012 103.75 69C103.75 50.4045 98.3392 33.419 89.1967 20.8438C89.0357 20.6425 88.8115 20.5045 88.6562 20.3033ZM52 23C47.8888 23 44.0247 24.4835 40.5 26.956L52.1783 54.441L64.0405 27.1285C60.395 24.4663 56.2665 23 52 23ZM31.875 36.1158C27.3612 43.1883 24.262 52.6758 23.4283 63.25H43.375L31.875 36.1158ZM72.4872 36.6562L60.7975 63.25H80.566C79.761 52.9172 76.8343 43.6885 72.4758 36.6562H72.4872ZM23.4225 74.75C24.2275 85.0828 27.1542 94.3115 31.507 101.344L43.2025 74.75H23.4225ZM60.6192 74.75L72.1193 101.884C76.633 94.8117 79.7323 85.3242 80.566 74.75H60.6192ZM51.816 83.5533L39.9537 110.866C43.5935 113.54 47.7277 115 51.9942 115C56.1055 115 59.9695 113.517 63.4942 111.044L51.816 83.5533Z"
+                  fill="black" />
+              </svg>
+            </div>
+            <span class="text-3xl font-semibold">Fresh Fruit</span>
+            <p class="w-10/12 text-center text-textColor ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Neque congue arcu</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-36">
+      <div class="maxWidth flex gap-11 md:gap-0 flex-wrap justify-evenly">
+        <div class="w-full md:w-5/12 flex gap-6 flex-col items-center">
+          <div class="center relative">
+            <img src="./public/image/Feature Image.png" alt="" class="w-10/12">
+            <span class=" text-white bg-secondary w-28 h-10 center absolute top-2 right-14">Fashion</span>
+          </div>
+          <div class="flex items-center gap-4 flex-wrap md:flex-nowrap w-9/12">
+            <img src="./public/image/Avatar.png" alt="" class="size-16">
+            <ul
+              class="flex flex-wrap justify-center item-center gap-3 md:gap-1 [&>li>a]:font-sans [&>li>a]:text-secondary [&>li>a]:text-xs [&>li>a]:font-medium">
+              <li>
+                <a href="#">
+                  Julie Christie
+                </a>
+              </li>
+              <li>
+                <a href="#" class="">
+                  .
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  October 17,2021
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  .
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  9:63 pm
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  .
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  2 comments
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-4 flex-col items-start justify-center w-9/12 ">
+            <p
+              class="font-semibold pb-4 text-3xl border-2 border-black border-b-dotted border-dotted border-t-0 border-r-0 border-l-0">
+              Fruit and vegetables and protection against diseases
+            </p>
+            <span class="font-sans text-sm text-left text-textColor font-medium">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. </span>
+
+            <a href="#" class="flex items-center gap-2 font-sans font-semibold">
+              Read More
+              <svg width="38" height="20" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
+                  fill="#233000" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-5/12 flex gap-6 flex-col items-center">
+          <div class="center relative">
+            <img src="./public/image/Feature Image (1).png" alt="" class="w-10/12">
+            <span class=" text-white bg-secondary w-28 h-10 center absolute top-2 right-14">Fashion</span>
+          </div>
+          <div class="flex items-center gap-4 flex-wrap md:flex-nowrap w-9/12">
+            <img src="./public/image/Avatar2.png" alt="" class="size-16">
+            <ul
+              class="flex flex-wrap justify-center item-center gap-3 md:gap-1 [&>li>a]:font-sans [&>li>a]:text-secondary [&>li>a]:text-xs [&>li>a]:font-medium">
+              <li>
+                <a href="#">
+                  Julie Christie
+                </a>
+              </li>
+              <li>
+                <a href="#" class="">
+                  .
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  October 17,2021
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  .
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  9:63 pm
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  .
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  2 comments
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-4 flex-col items-start justify-center w-9/12 ">
+            <p
+              class="font-semibold pb-4 text-3xl border-2 border-black border-b-dotted border-dotted border-t-0 border-r-0 border-l-0">
+              Fruit and vegetables and protection against diseases
+            </p>
+            <span class="font-sans text-sm text-left text-textColor font-medium">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. </span>
+
+            <a href="#" class="flex items-center gap-2 font-sans font-semibold">
+              Read More
+              <svg width="38" height="20" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
+                  fill="#233000" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Reservations" class="bg-secondary2 py-32 ">
+      <div class="maxWidth flex flex-col gap-8">
+        <div class="flex flex-col items-center gap-4">
+          <h3 class="text-4xl sm:text-6xl font-semibold">Make a Reservation</h3>
+          <span class="text-textColor font-sans">Get in touch with restaurant</span>
+        </div>
+        <div
+          class="wrapper flex gap-6 items-start md:gap-0 justify-center md:justify-between flex-wrap [&_.item>span]:font-medium [&_.item]:cursor-pointer [&_.item]:flex [&_.item]:flex-col [&_.item]:items-center [&_.item]:justify-start [&_.item]:font-sans [&_.item]:border [&_.item]:border-black [&_.item]:w-10/12 md:[&_.item]:w-[32%]  [&_ul]:w-full [&_ul]:flex-col [&_ul]:items-center [&_li]:w-full [&_li]:text-center [&_ul]:gap-2 [&_li]:border [&_li]:border-secondary [&_li]:border-t-0 [&_li]:border-r-0 [&_li]:border-l-0 [&_li]:pb-2 [&_li]:text-secondary ">
+          <div class="item h-12">
+            <input type="date" id="dateInput" class="outline-none size-full bg-secondary2 px-4">
+          </div>
+          <div class=" dropDownItem">
+            <div class="dropDownTitle  py-3 px-4 flex items-center justify-between w-full h-11" id="">
+              <select name="" id="" class="w-full">
+                <option value="" class="bg-primary">10:00 pm</option>
+                <option value="">6:00 pm</option>
+                <option value="">6:00 pm</option>
+                <option value="">6:00 pm</option>
+                <option value="">6:00 pm</option>
+                <option value="">6:00 pm</option>
+                <option value="">6:00 pm</option>
+              </select>
+
+              <!-- <span class="dropDownTitleText">6:00 pm</span>
+              <input type="checkbox" class="sr-only" id="check">
+              <span class="arrow">
+                <svg width="17" height="10" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 1.5L14 14L26.5 1.5" stroke="black" stroke-width="2" />
+                </svg>
+              </span> -->
+            </div>
+            <!-- <label for="check">6:00 pm</label> -->
+
+            <!--?-------REMOVE-LAST-LI-BORDER--------------->
+            <!-- <ul class="dropDownContent transition-all duration-300 flex z-40 px-4 h-0 overflow-hidden">
+              <li>6:00 pm</li>
+              <li>7:00 pm</li>
+              <li>8:00 pm</li>
+              <li>9:00 pm</li>
+              <li>10:00 pm</li>
+
+              <li>11:00 pm</li>
+              <li>12:00 pm</li>
+              <li>8:00 pm</li>
+              <li>9:00 pm</li>
+              <li>10:00 pm</li>
+            </ul> -->
+          </div>
+          <div class="item dropDownItem">
+            <div class="dropDownTitle py-3 px-4 w-full h-11 flex items-center justify-between">
+              <span class="dropDownTitleText">2 Person</span>
+              <span class="arrow">
+                <svg width="17" height="10" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 1.5L14 14L26.5 1.5" stroke="black" stroke-width="2" />
+                </svg>
+              </span>
+            </div>
+            <!--?-------REMOVE-LAST-LI-BORDER--------------->
+            <!-- <ul class="dropDownContent transition-all duration-300 z-40 px-4 flex h-0 overflow-hidden ">
+              <li>1 Person</li>
+              <li>2 Person</li>
+              <li>3 Person</li>
+              <li>4 Person</li>
+              <li>5 Person</li>
+
+              <li>6 Person</li>
+              <li>7 Person</li>
+              <li>8 Person</li>
+              <li>9 Person</li>
+              <li>10 Person</li>
+
+              <li>11 Person</li>
+              <li>12 Person</li>
+              <li>13 Person</li>
+              <li>14 Person</li>
+              <li>15 Person</li>
+            </ul> -->
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <a href="#" class="bg-primary px-9 py-3 text-white">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-32">
+      <div class="maxWidth">
+        <div class="flex flex-col gap-3 items-center justify-center">
+          <h4 class="text-6xl font-semibold w-10/12 xl:w-5/12 text-center">Calories Energy Balance</h4>
+          <p class="text-textColor font-sans text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+        <div class="mt-20 w-full flex gap-7 md:gap-0 justify-center md:justify-between flex-wrap">
+          <div class="w-full sm:w-[45%] md:w-[31%] relative">
+            <img src="./public/image/Image4.png" alt="">
+            <div class="flex justify-between w-10/12 absolute top-7 left-5">
+              <span class="font-bold text-2xl"> Starters</span>
+              <svg width="38" height="20" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
+                  fill="#233000" />
+              </svg>
+            </div>
+          </div>
+          <div class="w-full sm:w-[45%] md:w-[31%] relative">
+            <img src="./public/image/Image (3).png" alt="">
+            <div class="flex justify-between w-10/12 absolute top-7 left-5">
+              <span class="font-bold text-2xl"> Starters</span>
+              <svg width="38" height="20" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
+                  fill="#233000" />
+              </svg>
+            </div>
+          </div>
+          <div class="w-full sm:w-[45%] md:w-[31%] relative">
+            <img src="./public/image/Image (2).png" alt="">
+            <div class="flex justify-between w-10/12 absolute top-7 left-5">
+              <span class="font-bold text-2xl"> Starters</span>
+              <svg width="38" height="20" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
+                  fill="#233000" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--*---------SLIDER------------------>
+    <section class="pt-36">
+      <div class="maxWidth">
+        <div class="swiper mySwiper w-10/12 h-96">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="flex flex-col justify-evenly md:justify-between bg-quote bg-right-top bg-no-repeat size-full p-4">
+                <div class="h-1/2">
+                  <p class="text-xl md:text-4xl text-left w-11/12">“ Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Purus
+                    lorem id penatibus imperdiet.
+                    Turpis egestas ultricies purus Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img src="./public/image/Avatar3.png" alt="" class="w-2/12">
+                  <div class="flex flex-col items-start">
+                    <span class="text-xl font-semibold">John Doe</span>
+                    <span class="text-textColor font-sans">Bloger</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex flex-col justify-evenly md:justify-between bg-quote bg-right-top bg-no-repeat size-full p-4">
+                <div class="h-1/2">
+                  <p class="text-xl md:text-4xl text-left w-11/12">“ Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Purus
+                    lorem id penatibus imperdiet.
+                    Turpis egestas ultricies purus Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img src="./public/image/Avatar3.png" alt="" class="w-2/12">
+                  <div class="flex flex-col items-start">
+                    <span class="text-xl font-semibold">John Doe</span>
+                    <span class="text-textColor font-sans">Bloger</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex flex-col justify-evenly md:justify-between bg-quote bg-right-top bg-no-repeat size-full p-4">
+                <div class="h-1/2">
+                  <p class="text-xl md:text-4xl text-left w-11/12">“ Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Purus
+                    lorem id penatibus imperdiet.
+                    Turpis egestas ultricies purus Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img src="./public/image/Avatar3.png" alt="" class="w-2/12">
+                  <div class="flex flex-col items-start">
+                    <span class="text-xl font-semibold">John Doe</span>
+                    <span class="text-textColor font-sans">Bloger</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex flex-col justify-evenly md:justify-between bg-quote bg-right-top bg-no-repeat size-full p-4">
+                <div class="h-1/2">
+                  <p class="text-xl md:text-4xl text-left w-11/12">“ Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Purus
+                    lorem id penatibus imperdiet.
+                    Turpis egestas ultricies purus Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img src="./public/image/Avatar3.png" alt="" class="w-2/12">
+                  <div class="flex flex-col items-start">
+                    <span class="text-xl font-semibold">John Doe</span>
+                    <span class="text-textColor font-sans">Bloger</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex flex-col justify-evenly md:justify-between bg-quote bg-right-top bg-no-repeat size-full p-4">
+                <div class="h-1/2">
+                  <p class="text-xl md:text-4xl text-left w-11/12">“ Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Purus
+                    lorem id penatibus imperdiet.
+                    Turpis egestas ultricies purus Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img src="./public/image/Avatar3.png" alt="" class="w-2/12">
+                  <div class="flex flex-col items-start">
+                    <span class="text-xl font-semibold">John Doe</span>
+                    <span class="text-textColor font-sans">Bloger</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex flex-col justify-evenly md:justify-between bg-quote bg-right-top bg-no-repeat size-full p-4">
+                <div class="h-1/2">
+                  <p class="text-xl md:text-4xl text-left w-11/12">“ Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Purus
+                    lorem id penatibus imperdiet.
+                    Turpis egestas ultricies purus Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img src="./public/image/Avatar3.png" alt="" class="w-2/12">
+                  <div class="flex flex-col items-start">
+                    <span class="text-xl font-semibold">John Doe</span>
+                    <span class="text-textColor font-sans">Bloger</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-next absolute bottom-9 sm:bottom-16 right-16 z-20">
+            <svg width="38" height="20" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
+                fill="#000" />
+            </svg>
+          </div>
+          <div class="swiper-pagination font-bold text-xl absolute bottom-9 sm:bottom-16 right-28 z-20"></div>
+          <div class="swiper-button-prev absolute bottom-9 sm:bottom-16 right-40 z-20 rotate-180">
+            <svg width="38" height="20" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
+                fill="#000" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--*-------END-SLIDER------------------>
+
+    <footer class="bg-primary py-16 border-b border-dashed">
+      <div class="maxWidth flex flex-wrap gap-11 items-center justify-center md:justify-between">
+        <div>
+          <a href="index.html" class="font-semibold text-3xl text-center text-white">
+            Food <br> Zero.
+          </a>
+        </div>
+        <div class="flex flex-col gap-7">
+          <span class="text-white text-2xl">Contact</span>
+          <ul>
+            <li>
+              <a href="tel:+1+86 852 346 000" class="text-white font-sans text-sm">
+                +1+86 852 346 000
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@foodzero.com" class="text-white text-sm font-sans">
+                info@foodzero.com
+              </a>
+            </li>
+            <li class="text-white font-sans text-sm mt-5">1959 Sepulveda Blvd. <br>
+              Culver City, CA, 90230</li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-center md:items-start gap-7 w-full md:w-auto">
+          <span class="text-white text-2xl">Never Miss a Recipe</span>
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-wrap gap-4">
+              <input id="emailInput" type="text" placeholder="Email Address"
+                class="text-white outline-none bg-primary w-72 h-14 px-2 border border-white ">
+              <button id="subscribeEmailBtn" class="text-white bg-secondary py-2 px-6">Subscribe</button>
+            </div>
+            <p class="text-white font-sans text-sm">Join our subscribers and get best recipe delivered each week!</p>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+    <div class="bg-primary py-10">
+      <div class="maxWidth flex flex-wrap items-center justify-center gap-9 sm:justify-between">
+        <p class="text-white">© 2020 Zero Inc. All rights Reserved</p>
+        <div class="flex gap-7 [&_a]:transition-all [&_a]:duration-100 ">
+          <a href="" class="hover:-translate-y-2">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.23327 0C3.71382 0 0 3.70873 0 8.23327V19.7667C0 24.2862 3.70873 28 8.23327 28H19.7667C24.2862 28 28 24.2913 28 19.7667V8.23455C28 3.71382 24.2913 0 19.7667 0H8.23327ZM8.23327 2.54545H19.7667C20.5139 2.54445 21.254 2.69088 21.9445 2.97637C22.6351 3.26185 23.2625 3.68077 23.7909 4.20914C24.3192 4.7375 24.7381 5.36492 25.0236 6.05545C25.3091 6.74598 25.4555 7.48606 25.4545 8.23327V19.7667C25.4555 20.5139 25.3091 21.254 25.0236 21.9445C24.7381 22.6351 24.3192 23.2625 23.7909 23.7909C23.2625 24.3192 22.6351 24.7381 21.9445 25.0236C21.254 25.3091 20.5139 25.4555 19.7667 25.4545H8.23455C7.48722 25.4557 6.74701 25.3094 6.05633 25.024C5.36565 24.7386 4.73808 24.3197 4.20959 23.7913C3.68109 23.2629 3.26205 22.6355 2.97649 21.9448C2.69092 21.2542 2.54445 20.5141 2.54545 19.7667C2.54545 19.7667 2.54663 8.98187 2.54545 8.23455C2.54428 7.48722 2.69059 6.74701 2.976 6.05633C3.26141 5.36565 3.6803 4.73808 4.20868 4.20959C4.73706 3.68109 5.36454 3.26205 6.05515 2.97649C6.74577 2.69092 7.48595 2.54445 8.23327 2.54545ZM21.5167 5.33018C21.3651 5.32951 21.2149 5.35887 21.0747 5.41658C20.9345 5.47429 20.8071 5.5592 20.6999 5.66641C20.5927 5.77362 20.5077 5.901 20.45 6.04121C20.3923 6.18141 20.363 6.33166 20.3636 6.48327C20.3636 7.12473 20.8753 7.63636 21.5167 7.63636C21.6684 7.63721 21.8188 7.60796 21.9592 7.55033C22.0995 7.4927 22.2271 7.40781 22.3344 7.30059C22.4418 7.19336 22.5268 7.06592 22.5846 6.92563C22.6424 6.78535 22.6718 6.63499 22.6711 6.48327C22.6718 6.33155 22.6424 6.1812 22.5846 6.04091C22.5268 5.90062 22.4418 5.77318 22.3344 5.66596C22.2271 5.55873 22.0995 5.47385 21.9592 5.41621C21.8188 5.35858 21.6684 5.32934 21.5167 5.33018ZM14 6.36364C9.8 6.36364 6.36364 9.8 6.36364 14C6.36364 18.2 9.8 21.6364 14 21.6364C18.2 21.6364 21.6364 18.2 21.6364 14C21.6364 9.8 18.2 6.36364 14 6.36364ZM14 8.90909C16.8293 8.90909 19.0909 11.1707 19.0909 14C19.0909 16.8293 16.8293 19.0909 14 19.0909C11.1707 19.0909 8.90909 16.8293 8.90909 14C8.90909 11.1707 11.1707 8.90909 14 8.90909Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a href="" class="hover:-translate-y-2">
+            <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28 2.60975C26.9516 3.05836 25.8394 3.3522 24.7007 3.48144C25.8995 2.78756 26.7967 1.69633 27.2253 0.410799C26.0978 1.05666 24.865 1.51271 23.5795 1.75949C22.792 0.94571 21.7693 0.379785 20.6446 0.135299C19.5198 -0.109186 18.345 -0.0209199 17.2728 0.38862C16.2007 0.798161 15.2808 1.51003 14.6328 2.43166C13.9848 3.35329 13.6387 4.44204 13.6395 5.55635C13.6395 5.99275 13.6897 6.41563 13.7912 6.82046C11.5063 6.71176 9.2707 6.13891 7.23017 5.13924C5.18963 4.13958 3.38993 2.73553 1.94833 1.01861C1.43614 1.86606 1.16749 2.83039 1.17017 3.81184C1.17017 5.73677 2.18167 7.4373 3.72633 8.43303C2.81395 8.40504 1.9218 8.16607 1.12467 7.73613V7.80717C1.12388 9.08953 1.5825 10.3326 2.4226 11.3251C3.26269 12.3176 4.43242 12.9983 5.733 13.2516C4.88724 13.4757 3.99948 13.5089 3.13833 13.3485C3.50514 14.4517 4.2193 15.4166 5.18103 16.1085C6.14277 16.8003 7.30405 17.1845 8.50267 17.2074C7.31108 18.1114 5.94675 18.7794 4.48776 19.1732C3.02876 19.567 1.50375 19.6788 0 19.5022C2.62561 21.1354 5.68253 22.0026 8.80483 22C19.3725 22 25.1522 13.538 25.1522 6.19912C25.1522 5.96231 25.1428 5.71873 25.1335 5.48079C26.2565 4.69487 27.2269 3.72329 28 2.61088V2.60975Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a href="" class="hover:-translate-y-2">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.36364 0C1.07073 0 0 1.07073 0 2.36364V23.6364C0 24.9293 1.07073 26 2.36364 26H23.6364C24.9293 26 26 24.9293 26 23.6364V2.36364C26 1.07073 24.9293 0 23.6364 0H2.36364ZM2.36364 2.36364H23.6364V23.6364H17.5051V15.6591H20.5707L21.0139 12.1136H17.5063V9.82327C17.5063 8.79036 17.7592 8.08836 19.2412 8.08836H21.1616V4.875C20.8343 4.83364 19.6985 4.76391 18.3926 4.76391C15.6685 4.76391 13.8131 6.40309 13.8131 9.45455V12.1136H10.7108V15.6591H13.8119V23.6364H2.36364V2.36364Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a href="" class="hover:-translate-y-2">
+            <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14 0C9.94431 0 6.36031 0.429 4.17308 0.7568C2.36385 1.0274 0.904615 2.4189 0.571846 4.2625C0.290769 5.8311 0 8.1257 0 11C0 13.8743 0.290769 16.17 0.571846 17.7375C0.904615 19.5811 2.36385 20.977 4.17308 21.2443C6.37 21.5699 9.96585 22 14 22C18.0342 22 21.6311 21.571 23.8269 21.2432C25.6362 20.977 27.0954 19.5811 27.4282 17.7375C27.7092 16.1645 28 13.8655 28 11C28 8.1345 27.7135 5.8355 27.4282 4.2625C27.0954 2.4189 25.6362 1.0274 23.8269 0.7557C21.6397 0.4301 18.0546 0 14 0ZM14 2.2C17.9125 2.2 21.4082 2.6081 23.5243 2.9216C23.9641 2.98581 24.3729 3.18968 24.693 3.50436C25.0131 3.81904 25.2281 4.22858 25.3077 4.675C25.5683 6.127 25.8462 8.2797 25.8462 11C25.8462 13.7159 25.5683 15.873 25.3077 17.325C25.2295 17.772 25.0149 18.1824 24.6946 18.4973C24.3743 18.8122 23.9646 19.0156 23.5243 19.0784C21.3985 19.3919 17.8866 19.8 14 19.8C10.1123 19.8 6.59615 19.3919 4.47569 19.0784C4.03567 19.0148 3.62648 18.8112 3.30631 18.4964C2.98613 18.1816 2.77128 17.7717 2.69231 17.325C2.43169 15.873 2.15385 13.7247 2.15385 11C2.15385 8.272 2.43169 6.127 2.69231 4.675C2.77128 4.2283 2.98613 3.81841 3.30631 3.50362C3.62648 3.18883 4.03567 2.98517 4.47569 2.9216C6.58754 2.6081 10.0875 2.2 14 2.2ZM10.7692 4.7091V17.292L12.3846 16.3636L19.9231 11.9636L21.5385 11L19.9231 10.0375L12.3846 5.6375L10.7692 4.7091ZM12.9231 8.4909L17.1974 11L12.9231 13.5091V8.4909Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

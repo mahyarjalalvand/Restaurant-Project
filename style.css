@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Playfair Display", sans-serif;
+    }
+
+    .maxWidth {
+        @apply max-w-[1280px] m-auto px-4 sm:px-0;
+    }
+
+    .center {
+        @apply flex items-center justify-center;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 400px;
+    }
+}
